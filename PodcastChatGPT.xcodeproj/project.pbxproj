@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		53C9BEB729A3305B0069B498 /* PodcastChatGPTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C9BEB629A3305B0069B498 /* PodcastChatGPTApp.swift */; };
-		53C9BEB929A3305B0069B498 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C9BEB829A3305B0069B498 /* ContentView.swift */; };
 		53C9BEBB29A3305C0069B498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C9BEBA29A3305C0069B498 /* Assets.xcassets */; };
 		53C9BEBE29A3305C0069B498 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C9BEBD29A3305C0069B498 /* Preview Assets.xcassets */; };
 		53C9BEC629A330FA0069B498 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 53C9BEC529A330FA0069B498 /* Alamofire */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		53C9BEB329A3305B0069B498 /* PodcastChatGPT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodcastChatGPT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C9BEB629A3305B0069B498 /* PodcastChatGPTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastChatGPTApp.swift; sourceTree = "<group>"; };
-		53C9BEB829A3305B0069B498 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53C9BEBA29A3305C0069B498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53C9BEBD29A3305C0069B498 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53C9BECE29A331960069B498 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
@@ -48,6 +46,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53365E2329A388B800196CBB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				53C9BEB629A3305B0069B498 /* PodcastChatGPTApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		53365E2429A388C800196CBB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				53C9BEBA29A3305C0069B498 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		53C9BEAA29A3305B0069B498 = {
 			isa = PBXGroup;
 			children = (
@@ -67,12 +81,11 @@
 		53C9BEB529A3305B0069B498 /* PodcastChatGPT */ = {
 			isa = PBXGroup;
 			children = (
+				53365E2329A388B800196CBB /* App */,
+				53C9BECD29A331820069B498 /* Model */,
 				53C9BED329A331D00069B498 /* View */,
 				53C9BED029A331AA0069B498 /* ViewModel */,
-				53C9BECD29A331820069B498 /* Model */,
-				53C9BEB629A3305B0069B498 /* PodcastChatGPTApp.swift */,
-				53C9BEB829A3305B0069B498 /* ContentView.swift */,
-				53C9BEBA29A3305C0069B498 /* Assets.xcassets */,
+				53365E2429A388C800196CBB /* Resources */,
 				53C9BEBC29A3305C0069B498 /* Preview Content */,
 			);
 			path = PodcastChatGPT;
@@ -194,7 +207,6 @@
 			files = (
 				53C9BED929A3325F0069B498 /* PodcastsDetailView.swift in Sources */,
 				53C9BED529A332040069B498 /* PodcastsView.swift in Sources */,
-				53C9BEB929A3305B0069B498 /* ContentView.swift in Sources */,
 				53C9BEB729A3305B0069B498 /* PodcastChatGPTApp.swift in Sources */,
 				53C9BECF29A331960069B498 /* Podcast.swift in Sources */,
 				53C9BED229A331BB0069B498 /* PodcastsViewModel.swift in Sources */,

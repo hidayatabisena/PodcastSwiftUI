@@ -8,7 +8,10 @@
 import Foundation
 
 struct Podcast: Identifiable {
-    let id = UUID()
+    var id = UUID()
     let name: String
     let artworkUrl: String
+    let artistName: String
+    let genre: String
+    let releaseDate: String
 }
