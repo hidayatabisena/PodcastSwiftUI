@@ -11,6 +11,7 @@ import Kingfisher
 struct PodcastDetailView: View {
     
     let podcast: Podcast
+    let websiteUrl = "https://iswift.mayar.link"
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -31,11 +32,29 @@ struct PodcastDetailView: View {
                 .font(.headline)
                 .foregroundColor(.gray)
                 .padding(.top, 5)
+                .padding(.bottom, 10)
+            
+            ZStack {
+                Rectangle()
+                    .foregroundColor(.purple)
+                    .frame(width: 300, height: 56)
+                    .cornerRadius(8)
+                
+                if let url = URL(string: websiteUrl) {
+                    Link(destination: url) {
+                        Text("Visit iSwift iOS Academy")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .padding()
+                    }
+                }
+            }
+            
             
             Spacer()
         }
         .padding()
-        .navigationBarTitle(Text(""), displayMode: .inline)
+        .navigationBarTitle(Text("Details"), displayMode: .inline)
     }
 }
 
